@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control
+    namespace="Fim"
+    constructor="OpenCustomPageButton"
+    version="1.0.0"
+    display-name-key="OpenCustomPageButton"
+    description-key="OpenCustomPageButton description"
+    control-type="standard">
+
+    <!-- Placeholder field (required for field PCF) -->
+    <property
+      name="placeholder"
+      display-name-key="Placeholder"
+      description-key="Host field"
+      of-type="SingleLine.Text"
+      usage="bound"
+      required="false" />
+
+    <!-- Button text -->
+    <property
+      name="buttonText"
+      display-name-key="Button Text"
+      description-key="Label of the button"
+      of-type="SingleLine.Text"
+      usage="input"
+      required="false" />
+
+    <!-- Custom Page logical name -->
+    <property
+      name="customPageName"
+      display-name-key="Custom Page Name"
+      description-key="Logical name of the custom page"
+      of-type="SingleLine.Text"
+      usage="input"
+      required="true" />
+
+    <!-- Dialog title -->
+    <property
+      name="dialogTitle"
+      display-name-key="Dialog Title"
+      description-key="Dialog title"
+      of-type="SingleLine.Text"
+      usage="input"
+      required="false" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+    </resources>
+  </control>
+</manifest>
